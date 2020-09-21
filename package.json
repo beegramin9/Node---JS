@@ -1,5 +1,5 @@
 {
-  "name": "node-basic",
+  "name": "basic",
   "version": "1.0.0",
   "description": "\"Readme\"",
   "main": "01_hello.js",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/beegramin9/Node---JS#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "moment": "^2.28.0",
+    "moment-timezone": "^0.5.31"
+  },
+  "devDependencies": {}
 }
