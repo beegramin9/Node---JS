@@ -12,7 +12,8 @@ rl.on('line', function (buf) {
     let input = parseInt(buf);
 
     let grade;
-    switch (parseInt(input / 10)) {
+    switch (input / 10) {
+        /* input값에 따라 경로가 갈리도록 */
         case 10:
         /* 여기는 왜 break가 없어요? */
         // 경우가 같을 때, 즉 10이나 9이나 결과가 똑같을 때는 사이에 break가 오지 않는다

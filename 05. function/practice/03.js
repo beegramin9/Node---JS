@@ -41,6 +41,8 @@ function answer() {
         for (let minute of minutes) {
             let time = hour + ':' + minute;
             if (time.indexOf('3') !== -1) {
+                /* 이거는 들어있기만 하면 될 때 쓰는거
+                4번처럼 개수를 다 셀 때는 이걸 하면 안됨*/
                 count += 1;
             }
 

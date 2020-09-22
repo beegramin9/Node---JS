@@ -63,9 +63,9 @@ function answer1() {
         for (let k = 0; k <= 9; k++) {
             k = k.toString();
 
-            for (item of i) {
-                if (item === k) {
-                    sum[k] += 1
+            for (item of i) { /* 문자열로 만들고 모든 자릿수를 for문으로 돌게 하는거야 */
+                if (item === k) { /* 해당 자리수가 기준 k=0,1,2...가 있다? 그러면 */
+                    sum[k] += 1 /* 해당 K번째 0에다가 1을 더해라 */
                 }
             }
         }
