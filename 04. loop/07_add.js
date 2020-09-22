@@ -1,0 +1,32 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.setPrompt('1부터 99까지의 숫자 입력: ');
+rl.prompt();
+
+// 숫자를 분해하고 붙여야 하니까 숫자로 접근하기보다는 문자로 접근하자
+rl.on('line', function (buf) {
+
+    let orgNumber = (buf.length > 1) ? buf : "0" + buf; /* 내 알고리즘은 여기 if에서 이상하게 된 듯 */
+    let number = orgNumber;
+    let cycle = 0;
+
+    while (true) {
+        let sum = parseInt(number[0]) + parseInt(number[1])
+        let newNumber = number[1] + sum % 10;
+        cycle++;
+        console.log(`새로운 숫자 ${newNumber}, ${cycle} 회`);
+        if (orgNumber === newNumber)
+            break;
+        if (cycle > 100)
+            /* 이 코드는 무한루프를 빠져나가기 위한 코드
+            CPIU의 계산속도가 너무 빠르면 Ctrl+C 가 먹히지 않는다. */
+            break;
+        number = newNumber;
+    }
+    rl.close()
+
+});
