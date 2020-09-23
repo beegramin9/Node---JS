@@ -11,7 +11,7 @@ rl.prompt();
 
 function sepPower(number) {
     let sepSum = 0;
-    for (i = 1; i <= number; i++) {
+    for (let i = 1; i <= number; i++) {
         sepSum += i ** 2;
     }
     return sepSum
@@ -19,7 +19,7 @@ function sepPower(number) {
 
 function wholePower(number) {
     let wholeSum = 0;
-    for (i = 1; i <= number; i++) {
+    for (let i = 1; i <= number; i++) {
         wholeSum += i;
     }
     return wholeSum ** 2

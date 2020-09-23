@@ -22,8 +22,11 @@
 
 function pythagorean() {
     let answer = [];
-    for (let i = 1; i <= 333; i++) {
+    for (let i = 1; i <= 1000; i++) {
         for (let k = 1; k <= 1000 - i - k; k++) {
+            if (i > k)
+                continue;
+            /* a<b<c 라는 조건이 있으니까 */
             if (i ** 2 + k ** 2 === (1000 - i - k) ** 2) {
                 answer.push(i, k, 1000 - i - k)
                 console.log(`찾았다.`)
