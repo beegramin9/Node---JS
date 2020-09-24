@@ -35,7 +35,7 @@ function Fibonacci_1(num) {
         return memo[num];
     }
     output = Fibonacci_1(num - 1) + Fibonacci_1(num - 2);
-    memo[num] = output;
+    memo[num] = output; /* 굳이 딕셔너리 값에 넣어줘야 하기 때문에 바로 return으로 안 쏘고 output을 한 번 더 쓰는 거구나 */
     return output;
 }
 

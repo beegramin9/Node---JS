@@ -43,6 +43,7 @@ for (i = 100; i <= 999; i++) {
         let product = i * k;
         if (isPalindrome(product.toString())) {
             /* 최댓값만 뽑자, 맨 처음 배웠던 최댓값 출력하는 알고리즘*/
+            // 여기선 다시 Int값으로 비교해야지. 대소비교를 해야하니까
             if (product > maxPal) {
                 maxPal = product;
                 console.log((i, k, product));
@@ -52,19 +53,22 @@ for (i = 100; i <= 999; i++) {
 }
 console.log('-----------------------')
 
-let maxX, maxY, product;
+let maxX = 0;
+let maxY = 0;
+let maxPal2 = 0;
 
 for (i = 100; i <= 999; i++) {
     for (k = i; k <= 999; k++) {
         product = i * k;
         if (isPalindrome(product.toString())) {
             /* 최댓값만 뽑자, 맨 처음 배웠던 최댓값 출력하는 알고리즘*/
-            if (product > maxPal) {
-                maxPal = product;
+            // 여기선 다시 Int값으로 비교해야지. 대소비교를 해야하니까
+            if (product > maxPal2) {
+                maxPal2 = product;
                 maxX = i;
                 maxY = k;
             }
         }
     }
 }
-console.log((maxX, maxY, maxPal));
+console.log(maxX, maxY, maxPal2);

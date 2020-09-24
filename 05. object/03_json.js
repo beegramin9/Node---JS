@@ -4,13 +4,11 @@ let people = [
 ];
 
 let externalForm = JSON.stringify(people);
-// 외부로 객체를 뽑아낼 때 쓰는 구문
-console.log(externalForm);
-
+// 외부로 객체를 뽑아낼 때 쓰는 구문. 문자열로 뽑힘
 console.log(externalForm);
 
 let p = JSON.parse(externalForm);
-// 외부에서 가져온 객체를 parse해서 내부에서 바로 사용하도록 하는 구문
+// 외부에서 가져온 객체를 parse해서 내부에서 바로 사용하도록 하는 구문. 다시 오브젝트로 들어옴
 
 for (let person of p) {
     console.log(

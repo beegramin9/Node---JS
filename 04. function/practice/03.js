@@ -1,24 +1,3 @@
-// const { sep } = require('path');
-// const readline = require('readline');
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-
-// rl.setPrompt('양의 정수 입력: ');
-// rl.prompt();
-
-
-// rl.on('line', function (buf) {
-//     let input = parseInt(buf);
-//     console.log(sepPower(input));
-//     console.log(wholePower(input));
-
-
-
-//     rl.close()
-// });
-
 let hours = []
 for (h = 0; h < 24; h++) {
     hours.push(h.toString());

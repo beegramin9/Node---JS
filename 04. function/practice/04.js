@@ -79,6 +79,7 @@ for (index in sum) {
     console.log(`${index}의 개수: ${sum[index]}개`)
 }
 
+console.log('------------')
 
 sum = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 for (let i = 1; i <= 1000; i++) {

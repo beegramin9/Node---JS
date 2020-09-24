@@ -9,6 +9,7 @@ let person = {
 // }
 // 어레이에서처럼 of를 사용할 수 없습니다.
 
+// 이거는 파이썬에서 for key in dic.keys() 
 for (let key in person) {
     /* 어레이에서도 in은 인덱스를 뽑아내는 장치였죠?
     여기에서는 key를 일종의 index로 보는 것입니다. */
@@ -24,7 +25,7 @@ let people = [
 ];
 
 /* 이거는 바깥이 어레이니까 인덱스를 주면 */
-for (let person in people) {
+for (let person of people) {
     console.log(
         person.name,
         person.gender,
