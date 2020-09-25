@@ -17,7 +17,6 @@ require('moment-timezone');
 
 moment.tz.setDefault("Asia/Seoul");
 let date = moment().format('YYYY-MM-DD HH:mm:ss');
-console.log(date);
 /* stat: 파일의 바이트 크기 출력하기 */
 
 /* tmp는 디렉토리 이름. 여기에 현재 디렉토리가 나올 수 있도록 */
