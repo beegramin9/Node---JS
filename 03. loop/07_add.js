@@ -9,6 +9,7 @@ rl.prompt();
 
 // 숫자를 분해하고 붙여야 하니까 숫자로 접근하기보다는 문자로 접근하자
 rl.on('line', function (buf) {
+    /* 'line' 이벤트는 엔터를 쳤을 때 발생 */
 
     let orgNumber = (buf.length > 1) ? buf : "0" + buf; /* 내 알고리즘은 여기 if에서 이상하게 된 듯 */
     let tmp = orgNumber;
