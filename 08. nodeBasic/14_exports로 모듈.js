@@ -3,7 +3,7 @@
 /* 두 가지 방법이 있다. 책 p66 */
 
 /* exports로 내보낼 준빅가 되어있는 모듈을 만들기 */
-
+// 사실 이건 Class를 만든 게 아니라 함수를 exports로 바깥으로 뺀 것 뿐이지
 
 exports.randInt = function (from, to) {
     return Math.floor(Math.random() * (from - to)) + to;

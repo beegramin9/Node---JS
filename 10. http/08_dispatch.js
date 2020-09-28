@@ -6,7 +6,7 @@ const view = require('./view/01_first')
 
 
 let server = http.createServer((req, res) => {
-    let pathName = url.parse(req.url).pathname /* url parse 객체의 pathname 속성 뽑기 */
+    let pathName = url.parse(req.url).pathname
 
     if (pathName === '/') {
         let html = view.first();

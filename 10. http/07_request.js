@@ -1,7 +1,10 @@
 const http = require('http');
 const url = require('url');
 let server = http.createServer((req, res) => {
-    let pathName = url.parse(req.url).pathname /* url parse 객체의 pathname 속성 뽑기 */
+    let pathName = url.parse(req.url).pathname
+    // req 입력에서 url 속성으로 url 뽑고
+    // 뽑은 url 속성을 url모듈의 parse 메소드로 parse하고
+    // parse된 url에서 pathname 속성을 뽑는다.
     let html;
     if (pathName === '/') {
         html = '/';

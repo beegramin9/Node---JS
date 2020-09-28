@@ -6,8 +6,8 @@ const view = require("./view/index");
 
 http
   .createServer((req, res) => {
-    let pathName = url.parse(req.url)
-      .pathname; /* url parse 객체의 pathname 속성 뽑기 */
+    let pathName = url.parse(req.url).pathname;
+
     switch (pathName) {
       case "/":
         /* 폴더 안의 파일들을 불러오는 메소드 */
@@ -15,6 +15,7 @@ http
           let list = "";
           for (let file of filelist) {
             let filename = file.substring(0, file.length - 4);
+            /* 문자열 자르기. 파이썬의 [:]와 같음 */
             list += `<li><a href="/?id=${filename}">${filename}</a></li>`;
           }
           let html = view.index(list);
