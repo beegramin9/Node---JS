@@ -2,6 +2,8 @@
 
 module.exports = {
     /* exports는 밖으로 빼낼 수 있게 하는 것 */
+    CONSTANT: 3,
+
 
     randInt: function (from, to) {
         return Math.floor(Math.random() * (from - to)) + to;
