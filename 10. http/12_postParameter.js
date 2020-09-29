@@ -17,6 +17,7 @@ http
     } else if (pathName === "/proc" /* 제출한 데이터를 받는 Post */) {
       let body = "";
       req.on("data", function (data) {
+        /* 여기있는 건 이벤트, 앞에 on이 있잖아. */
         body += data;
       });
       req.on("end", function () {
