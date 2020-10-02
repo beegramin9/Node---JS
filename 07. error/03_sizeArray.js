@@ -6,9 +6,9 @@ let size = -10;
 // console.log(array);
 
 try {
-    let array = new Array(size);
+  let array = new Array(size); /* 알고리즘 풀 때 이거 쓸만하겠다 */
 } catch (error) {
-    console.log(error.name);
-    console.log(error.message);
-    console.log('양의 정수를 입력하세요.');
+  console.log(error.name);
+  console.log(error.message);
+  console.log("양의 정수를 입력하세요.");
 }
