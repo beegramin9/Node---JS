@@ -61,12 +61,12 @@ module.exports = {
         ${subject} 을/를 삭제하겠습니까?
         <form action="/delete_proc" method="POST">
         
-          <input type="hidden" name="subject" value="${subject}">
+          <input type="hidden" name="subject">
           <input type="submit" value="삭제">
                    
         </form>
         `
-    }, /* hidden으로 하면 화면에는 안 보이지만... */
+    }, /* hidden으로 하면 화면에는 안 보이지만 여전히 name데이터로 어떤 애를 삭제하는지 보낼 수 있다. */
     updateForm: function (subject, description) {
         return `
         ${subject} 을/를 업데이트하시겠습니까?

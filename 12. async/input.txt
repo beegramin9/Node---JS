@@ -1,0 +1,2 @@
+Let's understant what is a call back function.
+What the hell is it?
