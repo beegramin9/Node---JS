@@ -61,7 +61,7 @@ module.exports = {
         ${subject} 을/를 삭제하겠습니까?
         <form action="/delete_proc" method="POST">
         
-          <input type="hidden" name="subject">
+          <input type="hidden" name="subject" value=${subject}>
           <input type="submit" value="삭제">
                    
         </form>

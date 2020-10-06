@@ -42,7 +42,6 @@ http
               buffer = buffer.replace(/\n/g, '<br>');
               let html = view.index(title, list, buffer, control); /* index의 content 자리에 들어간다. */
               res.end(html);
-
             })
           });
         }
@@ -80,6 +79,7 @@ http
           });
         });
         break;
+
       case '/update':
         fs.readdir("data", (e, filelist) => {
           let title = query.id
@@ -93,6 +93,7 @@ http
           });
         })
         break;
+
       case '/update_proc':
         body = "";
         req.on("data", function (data) {
@@ -125,15 +126,10 @@ http
             }
             res.writeHead(302, { 'Location': encoded });
             res.end();
-
-
-
           });
         });
 
         break;
-
-
 
       case '/delete':
         /* '~~를 삭제하시겠습니까?'를 되물어보는 보고 밑에 삭제 버튼이 있는 걸 만들고*/
